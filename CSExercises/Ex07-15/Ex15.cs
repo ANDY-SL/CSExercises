@@ -10,19 +10,14 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            int i;
-            for (i = 100; i < 1000; i++)
-            {
-                int a = i / 100;
-                double a3 = Math.Pow(a, 3);
-                int b = (i - a * 100) / 10;
-                double b3 = Math.Pow(b, 3);
-                int c = i - a * 100 - b * 10;
-                double c3 = Math.Pow(c, 3);
-                if (i == a3 + b3 + c3)
-                    Console.WriteLine(i);
-                else continue;
+           Console.Write("ARMSTRONG num test \n plz enter a num(3 digit) :");
+           int x = Convert.ToInt32(Console.ReadLine());
+           int hundred = x / 100;
+           int ten = (x - 100 * hundred) / 10;
+           int digit = x - 100 * hundred - ten * 10;
+           if (x == Math.Pow(hundred, 3) + Math.Pow(ten, 3) + Math.Pow(digit, 3))
+               Console.Write("it is an armstrong num .\n");
+           else Console.Write("its not an armstrong num.\n");
             }
-        }
     }
 }
