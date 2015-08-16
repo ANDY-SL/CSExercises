@@ -13,8 +13,9 @@ namespace CSExercises
             Console.Write("plz input the distance:");
             double d = Convert.ToDouble(Console.ReadLine());
             double f = 2.40 + d * 0.4;
-            f = Math.Ceiling((f * 10) / 10);
-            Console.WriteLine("the fare is  {0:0.00}", f);
+            f = Math.Ceiling(f * 10)/10;
+            Console.Write("the total fare is {0:0.00}\n", f);
+          
         }
     }
 }
