@@ -10,13 +10,29 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.Write("plz input three sides:a,b,c");
+            Console.Write("plz input three sides:a,b,c\n");
             double a = Convert.ToDouble(Console.ReadLine());
             double b = Convert.ToDouble(Console.ReadLine());
             double c = Convert.ToDouble(Console.ReadLine());
-            double s = (a + b + c) / 2;
-            double area=s*(s-a)*(s-b)*(s-c);
-            Console.WriteLine("the area is {0}",area);
+            bool quit = false;
+            while (quit == false)
+            {
+                if (a + b > c && b + c > a && a + c > b)
+                {
+                    double s = (a + b + c) / 2;
+                    double area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+                    quit = true;
+                    Console.WriteLine("the area is {0}", area);
+                }
+                else
+                {
+                    Console.Write("its not a triangle:\nplease enter again:\n");
+                    a = Convert.ToDouble(Console.ReadLine());
+                    b = Convert.ToDouble(Console.ReadLine());
+                    c = Convert.ToDouble(Console.ReadLine());
+                }
+               
+            }
         }
     }
 }

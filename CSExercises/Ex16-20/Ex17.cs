@@ -19,7 +19,7 @@ namespace CSExercises
             if (gender == "M" && age > 39)
                 Console.Write("GOOD MORNING Uncle " + name + "\n");
             else if (gender == "M" && age < 40)
-                Console.Write("GOOD MORNING MS " + name +"\n" );
+                Console.Write("GOOD MORNING Mr " + name +"\n" );
             else if (gender == "F" && age > 39)
                 Console.Write("GOOD MORNING Aunty " + name +"\n" );
             else Console.Write("GOOD MORNING Ms " + name +"\n");
