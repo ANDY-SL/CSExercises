@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>bussiness_case.p</StartupObject>
+    <StartupObject>CSExercises.Ex32</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -90,7 +90,6 @@
     <Compile Include="Ex39-44\Ex44.cs" />
     <Compile Include="Ex45-46\Ex45.cs" />
     <Compile Include="Ex45-46\Ex46.cs" />
-    <Compile Include="Ex45-46\stringhandling1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
